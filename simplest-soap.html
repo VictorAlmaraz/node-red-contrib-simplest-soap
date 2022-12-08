@@ -1,0 +1,43 @@
+<script type="text/javascript">
+    RED.nodes.registerType('SOAP Client',{
+        category: 'network',
+        color: '#DEBD5C',
+        defaults: {
+            name: {value: ""},
+            url: {value:""}
+        },
+        inputs:1,
+        outputs:1,
+        icon: "white-globe.png",
+        label: function() {
+            return this.name||"SOAP Client";
+        }
+    });
+</script>
+
+<script type="text/html" data-template-name="SOAP Client">
+    <div class="form-row">
+        <label for="node-input-name"><i class="fa fa-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+    <div class="form-row">
+        <label for="node-input-url"><i class="fa fa-key"></i> WSDL URL</label>
+        <input type="text" id="node-input-url">
+    </div>
+</script>
+
+<script type="text/markdown" data-help-name="SOAP Client">
+This node is a wrapper for [soap](https://www.npmjs.com/package/soap)
+Its goal is to provide the simplest SOAP client implementation for node-red
+    
+### Inputs
+
+: payload (object) :  the call parameters
+: action (string)          :  the name of the action to run
+
+### Outputs
+
+1. Standard output
+: payload (object) : webservice result
+    
+</script>

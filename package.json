@@ -1,0 +1,33 @@
+{
+  "name": "node-red-contrib-simplest-soap",
+  "version": "1.0.1",
+  "description": "The simplest SOAP wrapper for node-red",
+  "main": "simplest-soap.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VictorAlmaraz/node-red-contrib-simplest-soap.git"
+  },
+  "author": "Victor Almaraz <victor@almaraz.com.br> (https://www.linkedin.com/in/Victor-Almaraz/)",
+  "license": "ISC",
+  "keywords": [
+    "node-red",
+    "SOAP",
+    "WebServices",
+    "WSDL"
+  ],
+  "bugs": {
+    "url": "https://github.com/VictorAlmaraz/node-red-contrib-simplest-soap/issues"
+  },
+  "homepage": "https://github.com/VictorAlmaraz/node-red-contrib-simplest-soap",
+  "node-red": {
+    "nodes": {
+      "SOAP Client": "simplest-soap.js"
+    }
+  },
+  "dependencies": {
+    "soap": "^0.45.0"
+  }
+}
